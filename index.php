@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>فروشگاه من</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        /* navbar */
+        .navbar {
+            background:#1fa66e;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* card */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card button {
+            background: #1fa66e;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card button:hover {
+            background: #0077ff;
+        }
+
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+
+        <div class="logo">
+            Kourosh Shop
+        </div>
+
+        <div>
+            خانه | محصولات | تماس
+        </div>
+
+    </div>
+
+    <!-- grid -->
+    <div class="grid">
+
+        <div class="card">
+            <img src="gold.jpg">
+            <h3>گوشواره</h3>
+            <p>23,200,000 تومان</p>
+            <button>خرید</button>
+        </div>
+
+        <div class="card">
+            <img src="Bikini.jpg">
+            <h3>شورت</h3>
+            <p>200,000 تومان</p>
+            <button>خرید</button>
+        </div>
+ <div class="card">
+            <img src="lcd.jpg">
+            <h3>مانیتور</h3>
+            <p>7,500,000 تومان</p>
+            <button>خرید</button>
+        </div>
+
+        <div class="card">
+            <img src="m1.jpg">
+            <h3>موس</h3>
+            <p>500,000 تومان</p>
+            <button>خرید</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
