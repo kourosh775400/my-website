@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="fa">
 
 <head>
-    <meta charset="UTF-8">
-    <title>پورتفولیو کوروش</title>
+<meta charset="UTF-8">
+<title>پورتفولیو کوروش</title>
 
-```
 <style>
 
-    body{
-        margin:0;
-        font-family: Arial;
-        background:#f2f2f2;
-    }
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f2f2f2;
+}
 
-    .header{
-        background:linear-gradient(135deg,#4facfe,#00f2fe);
-        color:white;
-        text-align:center;
-        padding:50px;
-    }
+/* منو */
+.navbar{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
 
-    .profile{
-        width:150px;
-        height:150px;
-        border-radius:50%;
-        object-fit:cover;
-        border:4px solid white;
-        margin-bottom:15px;
-    }
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
 
-    .section{
-        background:white;
-        margin:20px;
-        padding:20px;
-        border-radius:10px;
-        box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    }
+.navbar a:hover{
+    color:yellow;
+}
 
-    .btn{
-        display:inline-block;
-        background:#4facfe;
-        color:white;
-        padding:12px 25px;
-        text-decoration:none;
-        border-radius:8px;
-        margin-top:10px;
-    }
+/* هدر */
+.header{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+
+/* عکس پروفایل */
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+/* باکس‌ها */
+.section{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    width:60%;
+}
+
+/* پروژه‌ها */
+.projects{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    flex:1;
+}
+
+/* دکمه */
+.btn{
+    display:inline-block;
+    background:#4facfe;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* ریسپانسیو موبایل */
 @media (max-width: 768px) {
 
     .projects{
@@ -61,69 +97,80 @@
 }
 
 </style>
-```
 
 </head>
 
 <body>
 
-```
+<div class="navbar">
+<a href="#about">درباره من</a>
+<a href="#skills">مهارت‌ها</a>
+<a href="#projects">نمونه کارها</a>
+<a href="#contact">تماس</a>
+</div>
+
 <div class="header">
 
-   
-    <img src="happy.jpg" class="profile">
+<img src="me.jpg" class="profile">
 
-    <h1>کوروش</h1>
-    <p>طراح وب در حال یادگیری</p>
-
-</div>
-
-<div class="section">
-
-    <h2>درباره من</h2>
-
-    <p>
-        سلام، من کوروش هستم. در حال یادگیری طراحی وب، برنامه‌نویسی و معامله‌گری هستم و هدفم ساخت پروژه‌های واقعی و گرفتن درآمد از فریلنسری است.
-    </p>
+<h1>کوروش</h1>
+<p>طراح وب در حال یادگیری</p>
 
 </div>
 
-<div class="section">
+<div class="section" id="about">
 
-    <h2>مهارت‌ها</h2>
-
-    <ul>
-        <li>HTML ⭐⭐⭐</li>
-        <li>CSS ⭐⭐⭐</li>
-        <li>GitHub ⭐⭐</li>
-        <li>C++ ⭐⭐⭐</li>
-        <li>Trading ⭐⭐⭐⭐</li>
-    </ul>
+<h2>درباره من</h2>
+<p>سلام، من کوروش هستم و در حال یادگیری طراحی وب هستم.</p>
 
 </div>
 
-<div class="section">
+<div class="section" id="skills">
 
-    <h2>نمونه کارها</h2>
+<h2>مهارت‌ها</h2>
+<ul>
+<li>HTML ⭐⭐⭐</li>
+<li>CSS ⭐⭐⭐</li>
+<li>GitHub ⭐⭐</li>
+<li>Trading ⭐⭐⭐⭐</li>
+</ul>
 
-    <ul>
-        <li>فروشگاه تمرینی</li>
-        <li>پورتفولیو شخصی</li>
-    </ul>
+</div>
+
+<div class="section" id="projects">
+
+<h2>نمونه کارها</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>فروشگاه</h3>
+<p>پروژه تمرینی فروشگاهی</p>
+</div>
+
+<div class="card">
+<h3>پورتفولیو</h3>
+<p>سایت شخصی من</p>
+</div>
+
+<div class="card">
+<h3>آینده</h3>
+<p>به زودی...</p>
+</div>
 
 </div>
 
-<div class="section">
+</div>
 
-    <h2>تماس با من</h2>
+<div class="section" id="contact">
 
-    <p>ایمیل: example@email.com</p>
+<h2>تماس با من</h2>
 
-    <a href="mailto:example@email.com" class="btn">ارسال ایمیل</a>
+<p>ایمیل: example@email.com</p>
+
+<a href="mailto:example@email.com" class="btn">ارسال ایمیل</a>
 
 </div>
-```
 
 </body>
-
 </html>
